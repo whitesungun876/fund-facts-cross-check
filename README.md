@@ -33,11 +33,13 @@ uv run --frozen --env-file .env python evaluate.py --mode live
 
 The application itself still does not auto-discover credentials or `.env` files.
 
-## Recorded live run
+## Five-minute video demo
 
-The saved walkthrough records a real OpenRouter execution over the two synthetic documents, not injected model output. Request `5a72ed5d-720d-448a-b795-d6c02be7ff85` completed with 100% field coverage: both models agreed on Alpha's 0.30% fee and explicit lack of capital guarantee, agreed on Beta's 45 bps fee, and correctly returned `not_stated` for Beta's missing guarantee statement. Every claim passed the independent evidence check.
+[![Watch the five-minute narrated demo](demo/video-poster.jpg)](https://github.com/whitesungun876/fund-facts-cross-check/raw/refs/heads/main/demo/fund-facts-demo.mp4)
 
-See [the five-minute walkthrough](demo/walkthrough.md) and [the compact live-run record](demo/live_run.json). The record contains model IDs, token usage, claims, citations, relation labels and evidence results, but no credentials.
+[Watch or download the MP4](https://github.com/whitesungun876/fund-facts-cross-check/raw/refs/heads/main/demo/fund-facts-demo.mp4) — 5:00, English synthetic narration and synchronized English captions.
+
+The video visualizes the actual inputs and saved outputs of a real OpenRouter run, then shows a separately labeled injected failure and the mutation gates. Its animated panels are an explanatory replay of CLI results, not a screen recording or an implemented application UI. Both models passed all eight field checks in the successful run; earlier failed attempts are also discussed. The synthetic corpus and narrow verification limits remain explicit.
 
 ## Adversarial example: agreement with bad evidence
 
