@@ -37,7 +37,7 @@ The application itself still does not auto-discover credentials or `.env` files.
 
 [![Watch the five-minute narrated demo](demo/video-poster.jpg)](https://whitesungun876.github.io/fund-facts-cross-check/)
 
-[Watch the video online](https://whitesungun876.github.io/fund-facts-cross-check/) — 5:00, English synthetic narration and synchronized English captions.
+[Watch the video online](https://whitesungun876.github.io/fund-facts-cross-check/) — 5:00, English AI narration (Gemini 3.1 Flash TTS, Kore voice) and synchronized English captions.
 
 The video visualizes the actual inputs and saved outputs of a real OpenRouter run, then shows a separately labeled injected failure and the mutation gates. Its animated panels are an explanatory replay of CLI results, not a screen recording or an implemented application UI. Both models passed all eight field checks in the successful run; earlier failed attempts are also discussed. The synthetic corpus and narrow verification limits remain explicit.
 

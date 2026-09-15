@@ -4,7 +4,7 @@
 
 [**▶ Watch the video online**](https://whitesungun876.github.io/fund-facts-cross-check/)
 
-5:00 · 1280 × 720 · English synthetic narration · Synchronized English captions.
+5:00 · 1280 × 720 · English AI narration (Gemini 3.1 Flash TTS, Kore voice) · Synchronized English captions.
 
 The video follows the synthetic source documents through two actual model responses, strict validation, scope alignment, value normalization and citation checks. It then demonstrates a separately labeled injected shared mistake, earlier development failures and the regression gates. The animation explains saved CLI results; it is not a screen recording or a product UI.
 
