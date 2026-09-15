@@ -1,0 +1,404 @@
+{
+  "mode": "offline_synthetic_injected",
+  "passed": true,
+  "case_count": 27,
+  "passed_cases": 27,
+  "disagreement": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "tn": 4,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "evidence": {
+    "count": 26,
+    "accuracy": 1.0,
+    "false_support_count": 0,
+    "false_support_rate": 0.0,
+    "supported_count": 10,
+    "retention": 1.0
+  },
+  "cases": [
+    {
+      "id": "E01",
+      "passed": true,
+      "expected": {
+        "relation": "agreement",
+        "evidence_a": "supported",
+        "evidence_b": "supported"
+      },
+      "observed": {
+        "evidence_a": "supported",
+        "reason_a": "VALUE_MATCH",
+        "evidence_b": "supported",
+        "reason_b": "VALUE_MATCH",
+        "relation": "agreement"
+      }
+    },
+    {
+      "id": "E02",
+      "passed": true,
+      "expected": {
+        "relation": "disagreement",
+        "evidence_a": "supported",
+        "evidence_b": "contradicted"
+      },
+      "observed": {
+        "evidence_a": "supported",
+        "reason_a": "VALUE_MATCH",
+        "evidence_b": "contradicted",
+        "reason_b": "VALUE_MISMATCH",
+        "relation": "disagreement"
+      }
+    },
+    {
+      "id": "E03",
+      "passed": true,
+      "expected": {
+        "relation": "incomparable",
+        "evidence_a": "supported",
+        "evidence_b": "unverifiable"
+      },
+      "observed": {
+        "evidence_a": "supported",
+        "reason_a": "VALUE_MATCH",
+        "evidence_b": "unverifiable",
+        "reason_b": "SCOPE_MISMATCH",
+        "relation": "incomparable"
+      }
+    },
+    {
+      "id": "E04",
+      "passed": true,
+      "expected": {
+        "relation": "incomparable",
+        "evidence_a": "supported",
+        "evidence_b": "unverifiable"
+      },
+      "observed": {
+        "evidence_a": "supported",
+        "reason_a": "VALUE_MATCH",
+        "evidence_b": "unverifiable",
+        "reason_b": "SCOPE_MISMATCH",
+        "relation": "incomparable"
+      }
+    },
+    {
+      "id": "E05",
+      "passed": true,
+      "expected": {
+        "relation": "agreement",
+        "evidence_a": "contradicted",
+        "evidence_b": "contradicted"
+      },
+      "observed": {
+        "evidence_a": "contradicted",
+        "reason_a": "NEGATION_CONFLICT",
+        "evidence_b": "contradicted",
+        "reason_b": "NEGATION_CONFLICT",
+        "relation": "agreement"
+      }
+    },
+    {
+      "id": "E06",
+      "passed": true,
+      "expected": {
+        "relation": "agreement",
+        "evidence_a": "insufficient",
+        "evidence_b": "insufficient"
+      },
+      "observed": {
+        "evidence_a": "insufficient",
+        "reason_a": "QUOTE_INSUFFICIENT",
+        "evidence_b": "insufficient",
+        "reason_b": "QUOTE_INSUFFICIENT",
+        "relation": "agreement"
+      }
+    },
+    {
+      "id": "E07",
+      "passed": true,
+      "expected": {
+        "relation": "both_unknown",
+        "evidence_a": "supported",
+        "evidence_b": "supported"
+      },
+      "observed": {
+        "evidence_a": "supported",
+        "reason_a": "NOT_STATED_IN_SCOPE",
+        "evidence_b": "supported",
+        "reason_b": "NOT_STATED_IN_SCOPE",
+        "relation": "both_unknown"
+      }
+    },
+    {
+      "id": "E08",
+      "passed": true,
+      "expected": {
+        "evidence_a": "contradicted",
+        "reason_a": "SOURCE_HAS_STATEMENT"
+      },
+      "observed": {
+        "evidence_a": "contradicted",
+        "reason_a": "SOURCE_HAS_STATEMENT"
+      }
+    },
+    {
+      "id": "E09",
+      "passed": true,
+      "expected": {
+        "evidence_a": "unverifiable",
+        "reason_a": "SOURCE_NOT_FOUND"
+      },
+      "observed": {
+        "evidence_a": "unverifiable",
+        "reason_a": "SOURCE_NOT_FOUND"
+      }
+    },
+    {
+      "id": "E10",
+      "passed": true,
+      "expected": {
+        "evidence_a": "unverifiable",
+        "reason_a": "SECTION_NOT_FOUND"
+      },
+      "observed": {
+        "evidence_a": "unverifiable",
+        "reason_a": "SECTION_NOT_FOUND"
+      }
+    },
+    {
+      "id": "E11",
+      "passed": true,
+      "expected": {
+        "evidence_a": "unverifiable",
+        "reason_a": "QUOTE_NOT_FOUND"
+      },
+      "observed": {
+        "evidence_a": "unverifiable",
+        "reason_a": "QUOTE_NOT_FOUND"
+      }
+    },
+    {
+      "id": "E12",
+      "passed": true,
+      "expected": {
+        "evidence_a": "insufficient",
+        "reason_a": "QUOTE_INSUFFICIENT"
+      },
+      "observed": {
+        "evidence_a": "insufficient",
+        "reason_a": "QUOTE_INSUFFICIENT"
+      }
+    },
+    {
+      "id": "E13",
+      "passed": true,
+      "expected": {
+        "evidence_a": "unverifiable",
+        "reason_a": "SOURCE_NOT_FOUND"
+      },
+      "observed": {
+        "evidence_a": "unverifiable",
+        "reason_a": "SOURCE_NOT_FOUND"
+      }
+    },
+    {
+      "id": "E14",
+      "passed": true,
+      "expected": {
+        "status": "partial",
+        "row_count": 4,
+        "missing_slots": 1
+      },
+      "observed": {
+        "status": "partial",
+        "row_count": 4,
+        "missing_slots": 1
+      }
+    },
+    {
+      "id": "E15-duplicate",
+      "passed": true,
+      "expected": {
+        "valid": false
+      },
+      "observed": {
+        "valid": false
+      }
+    },
+    {
+      "id": "E15-bool",
+      "passed": true,
+      "expected": {
+        "valid": false
+      },
+      "observed": {
+        "valid": false
+      }
+    },
+    {
+      "id": "E15-unit",
+      "passed": true,
+      "expected": {
+        "valid": false
+      },
+      "observed": {
+        "valid": false
+      }
+    },
+    {
+      "id": "E15-json-duplicate",
+      "passed": true,
+      "expected": {
+        "valid": false
+      },
+      "observed": {
+        "valid": false
+      }
+    },
+    {
+      "id": "E15-valid",
+      "passed": true,
+      "expected": {
+        "valid": true
+      },
+      "observed": {
+        "valid": true
+      }
+    },
+    {
+      "id": "E16-single",
+      "passed": true,
+      "expected": {
+        "status": "partial",
+        "row_count": 4,
+        "missing_slots": 4
+      },
+      "observed": {
+        "status": "partial",
+        "row_count": 4,
+        "missing_slots": 4
+      }
+    },
+    {
+      "id": "E16-both",
+      "passed": true,
+      "expected": {
+        "status": "failed",
+        "row_count": 4,
+        "missing_slots": 8
+      },
+      "observed": {
+        "status": "failed",
+        "row_count": 4,
+        "missing_slots": 8
+      }
+    },
+    {
+      "id": "E17-conditional",
+      "passed": true,
+      "expected": {
+        "evidence_a": "unverifiable",
+        "reason_a": "UNSUPPORTED_EXPRESSION"
+      },
+      "observed": {
+        "evidence_a": "unverifiable",
+        "reason_a": "UNSUPPORTED_EXPRESSION"
+      }
+    },
+    {
+      "id": "E17-conflict",
+      "passed": true,
+      "expected": {
+        "evidence_a": "unverifiable",
+        "reason_a": "SOURCE_CONFLICT"
+      },
+      "observed": {
+        "evidence_a": "unverifiable",
+        "reason_a": "SOURCE_CONFLICT"
+      }
+    },
+    {
+      "id": "E18-whitespace",
+      "passed": true,
+      "expected": {
+        "evidence_a": "supported",
+        "reason_a": "VALUE_MATCH"
+      },
+      "observed": {
+        "evidence_a": "supported",
+        "reason_a": "VALUE_MATCH"
+      }
+    },
+    {
+      "id": "E19",
+      "passed": true,
+      "expected": {
+        "evidence_a": "insufficient",
+        "reason_a": "MODEL_ABSTAINED"
+      },
+      "observed": {
+        "evidence_a": "insufficient",
+        "reason_a": "MODEL_ABSTAINED"
+      }
+    },
+    {
+      "id": "E20",
+      "passed": true,
+      "expected": {
+        "relation": "agreement",
+        "evidence_a": "supported",
+        "evidence_b": "supported"
+      },
+      "observed": {
+        "evidence_a": "supported",
+        "reason_a": "VALUE_MATCH",
+        "evidence_b": "supported",
+        "reason_b": "VALUE_MATCH",
+        "relation": "agreement"
+      }
+    },
+    {
+      "id": "E14-empty",
+      "passed": true,
+      "expected": {
+        "status": "failed",
+        "row_count": 4,
+        "missing_slots": 8
+      },
+      "observed": {
+        "status": "failed",
+        "row_count": 4,
+        "missing_slots": 8
+      }
+    }
+  ],
+  "mutations": {
+    "passed": true,
+    "caught_by": {
+      "normalization_disabled": [
+        "E01",
+        "E20"
+      ],
+      "evidence_gate_disabled": [
+        "E02",
+        "E03",
+        "E04",
+        "E05",
+        "E06",
+        "E08",
+        "E09",
+        "E10",
+        "E11",
+        "E12",
+        "E13",
+        "E17-conditional",
+        "E17-conflict",
+        "E19"
+      ]
+    }
+  }
+}

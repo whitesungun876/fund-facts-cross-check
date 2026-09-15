@@ -1,0 +1,1200 @@
+[
+  {
+    "id": "E01",
+    "tags": [
+      "E01"
+    ],
+    "stage": "comparison",
+    "documents": [],
+    "model_inputs": {
+      "a": {
+        "fund_id": "alpha",
+        "share_class": "A",
+        "effective_date": "2026-01-01",
+        "field": "annual_management_fee",
+        "answer_status": "stated",
+        "value": {
+          "amount": "0.30",
+          "unit": "percent"
+        },
+        "citations": [
+          {
+            "document_id": "alpha-v1",
+            "section_id": "management_fee",
+            "quote": "The annual management fee for Class A is 0.30%."
+          }
+        ]
+      },
+      "b": {
+        "fund_id": "alpha",
+        "share_class": "A",
+        "effective_date": "2026-01-01",
+        "field": "annual_management_fee",
+        "answer_status": "stated",
+        "value": {
+          "amount": "30",
+          "unit": "bps"
+        },
+        "citations": [
+          {
+            "document_id": "alpha-v1",
+            "section_id": "management_fee",
+            "quote": "The annual management fee for Class A is 0.30%."
+          }
+        ]
+      }
+    },
+    "expected": {
+      "relation": "agreement",
+      "evidence_a": "supported",
+      "evidence_b": "supported"
+    }
+  },
+  {
+    "id": "E02",
+    "tags": [
+      "E02"
+    ],
+    "stage": "comparison",
+    "documents": [],
+    "model_inputs": {
+      "a": {
+        "fund_id": "alpha",
+        "share_class": "A",
+        "effective_date": "2026-01-01",
+        "field": "annual_management_fee",
+        "answer_status": "stated",
+        "value": {
+          "amount": "0.30",
+          "unit": "percent"
+        },
+        "citations": [
+          {
+            "document_id": "alpha-v1",
+            "section_id": "management_fee",
+            "quote": "The annual management fee for Class A is 0.30%."
+          }
+        ]
+      },
+      "b": {
+        "fund_id": "alpha",
+        "share_class": "A",
+        "effective_date": "2026-01-01",
+        "field": "annual_management_fee",
+        "answer_status": "stated",
+        "value": {
+          "amount": "35",
+          "unit": "bps"
+        },
+        "citations": [
+          {
+            "document_id": "alpha-v1",
+            "section_id": "management_fee",
+            "quote": "The annual management fee for Class A is 0.30%."
+          }
+        ]
+      }
+    },
+    "expected": {
+      "relation": "disagreement",
+      "evidence_a": "supported",
+      "evidence_b": "contradicted"
+    }
+  },
+  {
+    "id": "E03",
+    "tags": [
+      "E03"
+    ],
+    "stage": "comparison",
+    "documents": [],
+    "model_inputs": {
+      "a": {
+        "fund_id": "alpha",
+        "share_class": "A",
+        "effective_date": "2026-01-01",
+        "field": "annual_management_fee",
+        "answer_status": "stated",
+        "value": {
+          "amount": "0.30",
+          "unit": "percent"
+        },
+        "citations": [
+          {
+            "document_id": "alpha-v1",
+            "section_id": "management_fee",
+            "quote": "The annual management fee for Class A is 0.30%."
+          }
+        ]
+      },
+      "b": {
+        "fund_id": "alpha",
+        "share_class": "B",
+        "effective_date": "2026-01-01",
+        "field": "annual_management_fee",
+        "answer_status": "stated",
+        "value": {
+          "amount": "0.30",
+          "unit": "percent"
+        },
+        "citations": [
+          {
+            "document_id": "alpha-v1",
+            "section_id": "management_fee",
+            "quote": "The annual management fee for Class A is 0.30%."
+          }
+        ]
+      }
+    },
+    "expected": {
+      "relation": "incomparable",
+      "evidence_a": "supported",
+      "evidence_b": "unverifiable"
+    }
+  },
+  {
+    "id": "E04",
+    "tags": [
+      "E04"
+    ],
+    "stage": "comparison",
+    "documents": [],
+    "model_inputs": {
+      "a": {
+        "fund_id": "alpha",
+        "share_class": "A",
+        "effective_date": "2026-01-01",
+        "field": "annual_management_fee",
+        "answer_status": "stated",
+        "value": {
+          "amount": "0.30",
+          "unit": "percent"
+        },
+        "citations": [
+          {
+            "document_id": "alpha-v1",
+            "section_id": "management_fee",
+            "quote": "The annual management fee for Class A is 0.30%."
+          }
+        ]
+      },
+      "b": {
+        "fund_id": "alpha",
+        "share_class": "A",
+        "effective_date": "2025-01-01",
+        "field": "annual_management_fee",
+        "answer_status": "stated",
+        "value": {
+          "amount": "0.30",
+          "unit": "percent"
+        },
+        "citations": [
+          {
+            "document_id": "alpha-v1",
+            "section_id": "management_fee",
+            "quote": "The annual management fee for Class A is 0.30%."
+          }
+        ]
+      }
+    },
+    "expected": {
+      "relation": "incomparable",
+      "evidence_a": "supported",
+      "evidence_b": "unverifiable"
+    }
+  },
+  {
+    "id": "E05",
+    "tags": [
+      "E05"
+    ],
+    "stage": "comparison",
+    "documents": [],
+    "model_inputs": {
+      "a": {
+        "fund_id": "alpha",
+        "share_class": "A",
+        "effective_date": "2026-01-01",
+        "field": "capital_guarantee",
+        "answer_status": "stated",
+        "value": {
+          "label": "guaranteed"
+        },
+        "citations": [
+          {
+            "document_id": "alpha-v1",
+            "section_id": "capital_guarantee",
+            "quote": "Capital is not guaranteed. Investors may lose part or all of their investment."
+          }
+        ]
+      },
+      "b": {
+        "fund_id": "alpha",
+        "share_class": "A",
+        "effective_date": "2026-01-01",
+        "field": "capital_guarantee",
+        "answer_status": "stated",
+        "value": {
+          "label": "guaranteed"
+        },
+        "citations": [
+          {
+            "document_id": "alpha-v1",
+            "section_id": "capital_guarantee",
+            "quote": "Capital is not guaranteed. Investors may lose part or all of their investment."
+          }
+        ]
+      }
+    },
+    "expected": {
+      "relation": "agreement",
+      "evidence_a": "contradicted",
+      "evidence_b": "contradicted"
+    }
+  },
+  {
+    "id": "E06",
+    "tags": [
+      "E06"
+    ],
+    "stage": "comparison",
+    "documents": [],
+    "model_inputs": {
+      "a": {
+        "fund_id": "beta",
+        "share_class": "A",
+        "effective_date": "2026-01-01",
+        "field": "capital_guarantee",
+        "answer_status": "stated",
+        "value": {
+          "label": "guaranteed"
+        },
+        "citations": [
+          {
+            "document_id": "beta-v1",
+            "section_id": "risk",
+            "quote": "The fund is exposed to market risk."
+          }
+        ]
+      },
+      "b": {
+        "fund_id": "beta",
+        "share_class": "A",
+        "effective_date": "2026-01-01",
+        "field": "capital_guarantee",
+        "answer_status": "stated",
+        "value": {
+          "label": "guaranteed"
+        },
+        "citations": [
+          {
+            "document_id": "beta-v1",
+            "section_id": "risk",
+            "quote": "The fund is exposed to market risk."
+          }
+        ]
+      }
+    },
+    "expected": {
+      "relation": "agreement",
+      "evidence_a": "insufficient",
+      "evidence_b": "insufficient"
+    }
+  },
+  {
+    "id": "E07",
+    "tags": [
+      "E07"
+    ],
+    "stage": "comparison",
+    "documents": [],
+    "model_inputs": {
+      "a": {
+        "fund_id": "beta",
+        "share_class": "A",
+        "effective_date": "2026-01-01",
+        "field": "capital_guarantee",
+        "answer_status": "not_stated",
+        "value": null,
+        "citations": []
+      },
+      "b": {
+        "fund_id": "beta",
+        "share_class": "A",
+        "effective_date": "2026-01-01",
+        "field": "capital_guarantee",
+        "answer_status": "not_stated",
+        "value": null,
+        "citations": []
+      }
+    },
+    "expected": {
+      "relation": "both_unknown",
+      "evidence_a": "supported",
+      "evidence_b": "supported"
+    }
+  },
+  {
+    "id": "E08",
+    "tags": [
+      "E08"
+    ],
+    "stage": "assessment",
+    "documents": [],
+    "model_inputs": {
+      "a": {
+        "fund_id": "alpha",
+        "share_class": "A",
+        "effective_date": "2026-01-01",
+        "field": "capital_guarantee",
+        "answer_status": "not_stated",
+        "value": null,
+        "citations": []
+      }
+    },
+    "expected": {
+      "evidence_a": "contradicted",
+      "reason_a": "SOURCE_HAS_STATEMENT"
+    }
+  },
+  {
+    "id": "E09",
+    "tags": [
+      "E09"
+    ],
+    "stage": "assessment",
+    "documents": [],
+    "model_inputs": {
+      "a": {
+        "fund_id": "alpha",
+        "share_class": "A",
+        "effective_date": "2026-01-01",
+        "field": "annual_management_fee",
+        "answer_status": "stated",
+        "value": {
+          "amount": "0.30",
+          "unit": "percent"
+        },
+        "citations": [
+          {
+            "document_id": "missing",
+            "section_id": "management_fee",
+            "quote": "The annual management fee for Class A is 0.30%."
+          }
+        ]
+      }
+    },
+    "expected": {
+      "evidence_a": "unverifiable",
+      "reason_a": "SOURCE_NOT_FOUND"
+    }
+  },
+  {
+    "id": "E10",
+    "tags": [
+      "E10"
+    ],
+    "stage": "assessment",
+    "documents": [],
+    "model_inputs": {
+      "a": {
+        "fund_id": "alpha",
+        "share_class": "A",
+        "effective_date": "2026-01-01",
+        "field": "annual_management_fee",
+        "answer_status": "stated",
+        "value": {
+          "amount": "0.30",
+          "unit": "percent"
+        },
+        "citations": [
+          {
+            "document_id": "alpha-v1",
+            "section_id": "missing",
+            "quote": "The annual management fee for Class A is 0.30%."
+          }
+        ]
+      }
+    },
+    "expected": {
+      "evidence_a": "unverifiable",
+      "reason_a": "SECTION_NOT_FOUND"
+    }
+  },
+  {
+    "id": "E11",
+    "tags": [
+      "E11"
+    ],
+    "stage": "assessment",
+    "documents": [],
+    "model_inputs": {
+      "a": {
+        "fund_id": "alpha",
+        "share_class": "A",
+        "effective_date": "2026-01-01",
+        "field": "annual_management_fee",
+        "answer_status": "stated",
+        "value": {
+          "amount": "0.30",
+          "unit": "percent"
+        },
+        "citations": [
+          {
+            "document_id": "alpha-v1",
+            "section_id": "management_fee",
+            "quote": "The annual management fee for Class A is 0.35%."
+          }
+        ]
+      }
+    },
+    "expected": {
+      "evidence_a": "unverifiable",
+      "reason_a": "QUOTE_NOT_FOUND"
+    }
+  },
+  {
+    "id": "E12",
+    "tags": [
+      "E12"
+    ],
+    "stage": "assessment",
+    "documents": [],
+    "model_inputs": {
+      "a": {
+        "fund_id": "alpha",
+        "share_class": "A",
+        "effective_date": "2026-01-01",
+        "field": "annual_management_fee",
+        "answer_status": "stated",
+        "value": {
+          "amount": "0.30",
+          "unit": "percent"
+        },
+        "citations": [
+          {
+            "document_id": "alpha-v1",
+            "section_id": "management_fee",
+            "quote": "annual management fee"
+          }
+        ]
+      }
+    },
+    "expected": {
+      "evidence_a": "insufficient",
+      "reason_a": "QUOTE_INSUFFICIENT"
+    }
+  },
+  {
+    "id": "E13",
+    "tags": [
+      "E13"
+    ],
+    "stage": "assessment",
+    "documents": [],
+    "model_inputs": {
+      "a": {
+        "fund_id": "alpha",
+        "share_class": "A",
+        "effective_date": "2026-01-01",
+        "field": "annual_management_fee",
+        "answer_status": "stated",
+        "value": {
+          "amount": "0.30",
+          "unit": "percent"
+        },
+        "citations": [
+          {
+            "document_id": "alpha-v1",
+            "section_id": "management_fee",
+            "quote": "The annual management fee for Class A is 0.30%."
+          },
+          {
+            "document_id": "missing",
+            "section_id": "management_fee",
+            "quote": "The annual management fee for Class A is 0.30%."
+          }
+        ]
+      }
+    },
+    "expected": {
+      "evidence_a": "unverifiable",
+      "reason_a": "SOURCE_NOT_FOUND"
+    }
+  },
+  {
+    "id": "E14",
+    "tags": [
+      "E14"
+    ],
+    "stage": "pipeline",
+    "documents": [],
+    "model_inputs": {
+      "a": {
+        "schema_version": "1.0",
+        "claims": [
+          {
+            "fund_id": "alpha",
+            "share_class": "A",
+            "effective_date": "2026-01-01",
+            "field": "annual_management_fee",
+            "answer_status": "stated",
+            "value": {
+              "amount": "0.30",
+              "unit": "percent"
+            },
+            "citations": [
+              {
+                "document_id": "alpha-v1",
+                "section_id": "management_fee",
+                "quote": "The annual management fee for Class A is 0.30%."
+              }
+            ]
+          },
+          {
+            "fund_id": "alpha",
+            "share_class": "A",
+            "effective_date": "2026-01-01",
+            "field": "capital_guarantee",
+            "answer_status": "stated",
+            "value": {
+              "label": "not_guaranteed"
+            },
+            "citations": [
+              {
+                "document_id": "alpha-v1",
+                "section_id": "capital_guarantee",
+                "quote": "Capital is not guaranteed. Investors may lose part or all of their investment."
+              }
+            ]
+          },
+          {
+            "fund_id": "beta",
+            "share_class": "A",
+            "effective_date": "2026-01-01",
+            "field": "annual_management_fee",
+            "answer_status": "stated",
+            "value": {
+              "amount": "45",
+              "unit": "bps"
+            },
+            "citations": [
+              {
+                "document_id": "beta-v1",
+                "section_id": "management_fee",
+                "quote": "The annual management fee for Class A is 45 basis points."
+              }
+            ]
+          },
+          {
+            "fund_id": "beta",
+            "share_class": "A",
+            "effective_date": "2026-01-01",
+            "field": "capital_guarantee",
+            "answer_status": "not_stated",
+            "value": null,
+            "citations": []
+          }
+        ]
+      },
+      "b": {
+        "schema_version": "1.0",
+        "claims": [
+          {
+            "fund_id": "alpha",
+            "share_class": "A",
+            "effective_date": "2026-01-01",
+            "field": "annual_management_fee",
+            "answer_status": "stated",
+            "value": {
+              "amount": "0.30",
+              "unit": "percent"
+            },
+            "citations": [
+              {
+                "document_id": "alpha-v1",
+                "section_id": "management_fee",
+                "quote": "The annual management fee for Class A is 0.30%."
+              }
+            ]
+          },
+          {
+            "fund_id": "alpha",
+            "share_class": "A",
+            "effective_date": "2026-01-01",
+            "field": "capital_guarantee",
+            "answer_status": "stated",
+            "value": {
+              "label": "not_guaranteed"
+            },
+            "citations": [
+              {
+                "document_id": "alpha-v1",
+                "section_id": "capital_guarantee",
+                "quote": "Capital is not guaranteed. Investors may lose part or all of their investment."
+              }
+            ]
+          },
+          {
+            "fund_id": "beta",
+            "share_class": "A",
+            "effective_date": "2026-01-01",
+            "field": "annual_management_fee",
+            "answer_status": "stated",
+            "value": {
+              "amount": "45",
+              "unit": "bps"
+            },
+            "citations": [
+              {
+                "document_id": "beta-v1",
+                "section_id": "management_fee",
+                "quote": "The annual management fee for Class A is 45 basis points."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "expected": {
+      "status": "partial",
+      "row_count": 4,
+      "missing_slots": 1
+    }
+  },
+  {
+    "id": "E15-duplicate",
+    "tags": [
+      "E15-duplicate"
+    ],
+    "stage": "schema",
+    "documents": [],
+    "model_inputs": {
+      "answer": {
+        "schema_version": "1.0",
+        "claims": [
+          {
+            "fund_id": "alpha",
+            "share_class": "A",
+            "effective_date": "2026-01-01",
+            "field": "annual_management_fee",
+            "answer_status": "stated",
+            "value": {
+              "amount": "0.30",
+              "unit": "percent"
+            },
+            "citations": [
+              {
+                "document_id": "alpha-v1",
+                "section_id": "management_fee",
+                "quote": "The annual management fee for Class A is 0.30%."
+              }
+            ]
+          },
+          {
+            "fund_id": "alpha",
+            "share_class": "A",
+            "effective_date": "2026-01-01",
+            "field": "annual_management_fee",
+            "answer_status": "stated",
+            "value": {
+              "amount": "0.30",
+              "unit": "percent"
+            },
+            "citations": [
+              {
+                "document_id": "alpha-v1",
+                "section_id": "management_fee",
+                "quote": "The annual management fee for Class A is 0.30%."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "expected": {
+      "valid": false
+    }
+  },
+  {
+    "id": "E15-bool",
+    "tags": [
+      "E15-bool"
+    ],
+    "stage": "schema",
+    "documents": [],
+    "model_inputs": {
+      "answer": {
+        "schema_version": "1.0",
+        "claims": [
+          {
+            "fund_id": "alpha",
+            "share_class": "A",
+            "effective_date": "2026-01-01",
+            "field": "annual_management_fee",
+            "answer_status": "stated",
+            "value": {
+              "amount": true,
+              "unit": "percent"
+            },
+            "citations": [
+              {
+                "document_id": "alpha-v1",
+                "section_id": "management_fee",
+                "quote": "The annual management fee for Class A is 0.30%."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "expected": {
+      "valid": false
+    }
+  },
+  {
+    "id": "E15-unit",
+    "tags": [
+      "E15-unit"
+    ],
+    "stage": "schema",
+    "documents": [],
+    "model_inputs": {
+      "answer": {
+        "schema_version": "1.0",
+        "claims": [
+          {
+            "fund_id": "alpha",
+            "share_class": "A",
+            "effective_date": "2026-01-01",
+            "field": "annual_management_fee",
+            "answer_status": "stated",
+            "value": {
+              "amount": "0.30",
+              "unit": "dollars"
+            },
+            "citations": [
+              {
+                "document_id": "alpha-v1",
+                "section_id": "management_fee",
+                "quote": "The annual management fee for Class A is 0.30%."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "expected": {
+      "valid": false
+    }
+  },
+  {
+    "id": "E15-json-duplicate",
+    "tags": [
+      "E15-json-duplicate"
+    ],
+    "stage": "schema",
+    "documents": [],
+    "model_inputs": {
+      "answer": "{\"schema_version\":\"1.0\",\"claims\":[],\"claims\":[]}"
+    },
+    "expected": {
+      "valid": false
+    }
+  },
+  {
+    "id": "E15-valid",
+    "tags": [
+      "E15-valid"
+    ],
+    "stage": "schema",
+    "documents": [],
+    "model_inputs": {
+      "answer": {
+        "schema_version": "1.0",
+        "claims": [
+          {
+            "fund_id": "alpha",
+            "share_class": "A",
+            "effective_date": "2026-01-01",
+            "field": "annual_management_fee",
+            "answer_status": "stated",
+            "value": {
+              "amount": "0.30",
+              "unit": "percent"
+            },
+            "citations": [
+              {
+                "document_id": "alpha-v1",
+                "section_id": "management_fee",
+                "quote": "The annual management fee for Class A is 0.30%."
+              }
+            ]
+          },
+          {
+            "fund_id": "alpha",
+            "share_class": "A",
+            "effective_date": "2026-01-01",
+            "field": "capital_guarantee",
+            "answer_status": "stated",
+            "value": {
+              "label": "not_guaranteed"
+            },
+            "citations": [
+              {
+                "document_id": "alpha-v1",
+                "section_id": "capital_guarantee",
+                "quote": "Capital is not guaranteed. Investors may lose part or all of their investment."
+              }
+            ]
+          },
+          {
+            "fund_id": "beta",
+            "share_class": "A",
+            "effective_date": "2026-01-01",
+            "field": "annual_management_fee",
+            "answer_status": "stated",
+            "value": {
+              "amount": "45",
+              "unit": "bps"
+            },
+            "citations": [
+              {
+                "document_id": "beta-v1",
+                "section_id": "management_fee",
+                "quote": "The annual management fee for Class A is 45 basis points."
+              }
+            ]
+          },
+          {
+            "fund_id": "beta",
+            "share_class": "A",
+            "effective_date": "2026-01-01",
+            "field": "capital_guarantee",
+            "answer_status": "not_stated",
+            "value": null,
+            "citations": []
+          }
+        ]
+      }
+    },
+    "expected": {
+      "valid": true
+    }
+  },
+  {
+    "id": "E16-single",
+    "tags": [
+      "E16-single"
+    ],
+    "stage": "pipeline",
+    "documents": [],
+    "model_inputs": {
+      "a": {
+        "schema_version": "1.0",
+        "claims": [
+          {
+            "fund_id": "alpha",
+            "share_class": "A",
+            "effective_date": "2026-01-01",
+            "field": "annual_management_fee",
+            "answer_status": "stated",
+            "value": {
+              "amount": "0.30",
+              "unit": "percent"
+            },
+            "citations": [
+              {
+                "document_id": "alpha-v1",
+                "section_id": "management_fee",
+                "quote": "The annual management fee for Class A is 0.30%."
+              }
+            ]
+          },
+          {
+            "fund_id": "alpha",
+            "share_class": "A",
+            "effective_date": "2026-01-01",
+            "field": "capital_guarantee",
+            "answer_status": "stated",
+            "value": {
+              "label": "not_guaranteed"
+            },
+            "citations": [
+              {
+                "document_id": "alpha-v1",
+                "section_id": "capital_guarantee",
+                "quote": "Capital is not guaranteed. Investors may lose part or all of their investment."
+              }
+            ]
+          },
+          {
+            "fund_id": "beta",
+            "share_class": "A",
+            "effective_date": "2026-01-01",
+            "field": "annual_management_fee",
+            "answer_status": "stated",
+            "value": {
+              "amount": "45",
+              "unit": "bps"
+            },
+            "citations": [
+              {
+                "document_id": "beta-v1",
+                "section_id": "management_fee",
+                "quote": "The annual management fee for Class A is 45 basis points."
+              }
+            ]
+          },
+          {
+            "fund_id": "beta",
+            "share_class": "A",
+            "effective_date": "2026-01-01",
+            "field": "capital_guarantee",
+            "answer_status": "not_stated",
+            "value": null,
+            "citations": []
+          }
+        ]
+      },
+      "b": null,
+      "status_b": "timeout"
+    },
+    "expected": {
+      "status": "partial",
+      "row_count": 4,
+      "missing_slots": 4
+    }
+  },
+  {
+    "id": "E16-both",
+    "tags": [
+      "E16-both"
+    ],
+    "stage": "pipeline",
+    "documents": [],
+    "model_inputs": {
+      "a": null,
+      "b": null,
+      "status_a": "timeout",
+      "status_b": "timeout"
+    },
+    "expected": {
+      "status": "failed",
+      "row_count": 4,
+      "missing_slots": 8
+    }
+  },
+  {
+    "id": "E17-conditional",
+    "tags": [
+      "E17-conditional"
+    ],
+    "stage": "assessment",
+    "documents": [
+      {
+        "document_id": "alpha-v1",
+        "text": "SYNTHETIC FIXTURE — NOT A REAL FUND\nDocument ID: alpha-v1\nFund ID: alpha\nShare class: A\nTerms effective from: 2026-01-01\nFormat version: controlled-factsheet-v1\n\n[management_fee]\nThe annual management fee for Class A is 0.30%. A discounted rate may apply.\n\n[capital_guarantee]\nCapital is not guaranteed. Investors may lose part or all of their investment.\n"
+      }
+    ],
+    "model_inputs": {
+      "a": {
+        "fund_id": "alpha",
+        "share_class": "A",
+        "effective_date": "2026-01-01",
+        "field": "annual_management_fee",
+        "answer_status": "stated",
+        "value": {
+          "amount": "0.30",
+          "unit": "percent"
+        },
+        "citations": [
+          {
+            "document_id": "alpha-v1",
+            "section_id": "management_fee",
+            "quote": "The annual management fee for Class A is 0.30%."
+          }
+        ]
+      }
+    },
+    "expected": {
+      "evidence_a": "unverifiable",
+      "reason_a": "UNSUPPORTED_EXPRESSION"
+    }
+  },
+  {
+    "id": "E17-conflict",
+    "tags": [
+      "E17-conflict"
+    ],
+    "stage": "assessment",
+    "documents": [
+      {
+        "document_id": "alpha-v1",
+        "text": "SYNTHETIC FIXTURE — NOT A REAL FUND\nDocument ID: alpha-v1\nFund ID: alpha\nShare class: A\nTerms effective from: 2026-01-01\nFormat version: controlled-factsheet-v1\n\n[management_fee]\nThe annual management fee for Class A is 0.30%.\n\n[capital_guarantee]\nCapital is not guaranteed. Investors may lose part or all of their investment. Capital is guaranteed.\n"
+      }
+    ],
+    "model_inputs": {
+      "a": {
+        "fund_id": "alpha",
+        "share_class": "A",
+        "effective_date": "2026-01-01",
+        "field": "capital_guarantee",
+        "answer_status": "stated",
+        "value": {
+          "label": "not_guaranteed"
+        },
+        "citations": [
+          {
+            "document_id": "alpha-v1",
+            "section_id": "capital_guarantee",
+            "quote": "Capital is not guaranteed. Investors may lose part or all of their investment."
+          }
+        ]
+      }
+    },
+    "expected": {
+      "evidence_a": "unverifiable",
+      "reason_a": "SOURCE_CONFLICT"
+    }
+  },
+  {
+    "id": "E18-whitespace",
+    "tags": [
+      "E18-whitespace"
+    ],
+    "stage": "assessment",
+    "documents": [
+      {
+        "document_id": "alpha-v1",
+        "text": "SYNTHETIC FIXTURE — NOT A REAL FUND\nDocument ID: alpha-v1\nFund ID: alpha\nShare class: A\nTerms effective from: 2026-01-01\nFormat version: controlled-factsheet-v1\n\n[management_fee]\nThe annual management fee\nfor Class A is 0.30%.\n\n[capital_guarantee]\nCapital is not guaranteed. Investors may lose part or all of their investment.\n"
+      }
+    ],
+    "model_inputs": {
+      "a": {
+        "fund_id": "alpha",
+        "share_class": "A",
+        "effective_date": "2026-01-01",
+        "field": "annual_management_fee",
+        "answer_status": "stated",
+        "value": {
+          "amount": "0.30",
+          "unit": "percent"
+        },
+        "citations": [
+          {
+            "document_id": "alpha-v1",
+            "section_id": "management_fee",
+            "quote": "The annual management fee for Class A is 0.30%."
+          }
+        ]
+      }
+    },
+    "expected": {
+      "evidence_a": "supported",
+      "reason_a": "VALUE_MATCH"
+    }
+  },
+  {
+    "id": "E19",
+    "tags": [
+      "E19"
+    ],
+    "stage": "assessment",
+    "documents": [],
+    "model_inputs": {
+      "a": {
+        "fund_id": "alpha",
+        "share_class": "A",
+        "effective_date": "2026-01-01",
+        "field": "capital_guarantee",
+        "answer_status": "abstained",
+        "value": null,
+        "citations": []
+      }
+    },
+    "expected": {
+      "evidence_a": "insufficient",
+      "reason_a": "MODEL_ABSTAINED"
+    }
+  },
+  {
+    "id": "E20",
+    "tags": [
+      "E20"
+    ],
+    "stage": "comparison",
+    "documents": [
+      {
+        "document_id": "alpha-v1",
+        "text": "SYNTHETIC FIXTURE — NOT A REAL FUND\nDocument ID: alpha-v1\nFund ID: alpha\nShare class: A\nTerms effective from: 2026-01-01\nFormat version: controlled-factsheet-v1\n\n[management_fee]\nThe annual management fee for Class A is 0.7317%.\n\n[capital_guarantee]\nCapital is not guaranteed. Investors may lose part or all of their investment.\n"
+      }
+    ],
+    "model_inputs": {
+      "a": {
+        "fund_id": "alpha",
+        "share_class": "A",
+        "effective_date": "2026-01-01",
+        "field": "annual_management_fee",
+        "answer_status": "stated",
+        "value": {
+          "amount": "0.7317",
+          "unit": "percent"
+        },
+        "citations": [
+          {
+            "document_id": "alpha-v1",
+            "section_id": "management_fee",
+            "quote": "The annual management fee for Class A is 0.7317%."
+          }
+        ]
+      },
+      "b": {
+        "fund_id": "alpha",
+        "share_class": "A",
+        "effective_date": "2026-01-01",
+        "field": "annual_management_fee",
+        "answer_status": "stated",
+        "value": {
+          "amount": "73.17",
+          "unit": "bps"
+        },
+        "citations": [
+          {
+            "document_id": "alpha-v1",
+            "section_id": "management_fee",
+            "quote": "The annual management fee for Class A is 0.7317%."
+          }
+        ]
+      }
+    },
+    "expected": {
+      "relation": "agreement",
+      "evidence_a": "supported",
+      "evidence_b": "supported"
+    }
+  },
+  {
+    "id": "E14-empty",
+    "tags": [
+      "E14-empty"
+    ],
+    "stage": "pipeline",
+    "documents": [],
+    "model_inputs": {
+      "a": {
+        "schema_version": "1.0",
+        "claims": []
+      },
+      "b": {
+        "schema_version": "1.0",
+        "claims": []
+      }
+    },
+    "expected": {
+      "status": "failed",
+      "row_count": 4,
+      "missing_slots": 8
+    }
+  }
+]

@@ -1,0 +1,495 @@
+{
+  "schema_version": "1.0",
+  "request_id": "738ad1a1-77af-4df0-b741-fd1367648162",
+  "created_at": "2026-09-15T10:10:05.924526Z",
+  "status": "complete",
+  "request": {
+    "corpus_id": "synthetic-v1",
+    "question": "比较这两只基金的年度管理费和本金保证声明。每项结论附上原文依据，资料没有说明的部分标为未知。",
+    "fields": [
+      "annual_management_fee",
+      "capital_guarantee"
+    ]
+  },
+  "prompt_version": "fund-extract-v1",
+  "verifier_version": "controlled-v1",
+  "documents": [
+    {
+      "fund_id": "alpha",
+      "share_class": "A",
+      "effective_date": "2026-01-01",
+      "document_id": "alpha-v1",
+      "sha256": "a4c07e7288dda6e625d202647e575232e428eb54bbdfb86e7ea2c718a76d335f"
+    },
+    {
+      "fund_id": "beta",
+      "share_class": "A",
+      "effective_date": "2026-01-01",
+      "document_id": "beta-v1",
+      "sha256": "8d6c9683253e8044fdb33fde5fde15075f240a919ff11fe1e5cd41253599327a"
+    }
+  ],
+  "models": [
+    {
+      "slot": "a",
+      "model_id": "fixture/model-a",
+      "status": "ok",
+      "attempts": 1,
+      "duration_ms": 0,
+      "prompt_tokens": null,
+      "completion_tokens": null,
+      "usage_complete": false,
+      "error": null
+    },
+    {
+      "slot": "b",
+      "model_id": "fixture/model-b",
+      "status": "ok",
+      "attempts": 1,
+      "duration_ms": 0,
+      "prompt_tokens": null,
+      "completion_tokens": null,
+      "usage_complete": false,
+      "error": null
+    }
+  ],
+  "rows": [
+    {
+      "key": {
+        "fund_id": "alpha",
+        "share_class": "A",
+        "effective_date": "2026-01-01",
+        "field": "annual_management_fee"
+      },
+      "a": {
+        "presence": "present",
+        "assessment": {
+          "claim": {
+            "fund_id": "alpha",
+            "share_class": "A",
+            "effective_date": "2026-01-01",
+            "field": "annual_management_fee",
+            "answer_status": "stated",
+            "value": {
+              "amount": "0.30",
+              "unit": "percent"
+            },
+            "citations": [
+              {
+                "document_id": "alpha-v1",
+                "section_id": "management_fee",
+                "quote": "The annual management fee for Class A is 0.30%."
+              }
+            ]
+          },
+          "normalized_value": {
+            "amount": "30",
+            "unit": "bps"
+          },
+          "citation_checks": [
+            {
+              "citation": {
+                "document_id": "alpha-v1",
+                "section_id": "management_fee",
+                "quote": "The annual management fee for Class A is 0.30%."
+              },
+              "status": "located",
+              "reason_code": "EXACT_MATCH",
+              "spans": [
+                {
+                  "start": 179,
+                  "end": 226
+                }
+              ]
+            }
+          ],
+          "evidence_status": "supported",
+          "reason_code": "VALUE_MATCH",
+          "reason": "原文支持该字段值。",
+          "checked_sections": [
+            {
+              "document_id": "alpha-v1",
+              "section_id": "capital_guarantee"
+            },
+            {
+              "document_id": "alpha-v1",
+              "section_id": "management_fee"
+            }
+          ]
+        }
+      },
+      "b": {
+        "presence": "present",
+        "assessment": {
+          "claim": {
+            "fund_id": "alpha",
+            "share_class": "A",
+            "effective_date": "2026-01-01",
+            "field": "annual_management_fee",
+            "answer_status": "stated",
+            "value": {
+              "amount": "30",
+              "unit": "bps"
+            },
+            "citations": [
+              {
+                "document_id": "alpha-v1",
+                "section_id": "management_fee",
+                "quote": "The annual management fee for Class A is 0.30%."
+              }
+            ]
+          },
+          "normalized_value": {
+            "amount": "30",
+            "unit": "bps"
+          },
+          "citation_checks": [
+            {
+              "citation": {
+                "document_id": "alpha-v1",
+                "section_id": "management_fee",
+                "quote": "The annual management fee for Class A is 0.30%."
+              },
+              "status": "located",
+              "reason_code": "EXACT_MATCH",
+              "spans": [
+                {
+                  "start": 179,
+                  "end": 226
+                }
+              ]
+            }
+          ],
+          "evidence_status": "supported",
+          "reason_code": "VALUE_MATCH",
+          "reason": "原文支持该字段值。",
+          "checked_sections": [
+            {
+              "document_id": "alpha-v1",
+              "section_id": "capital_guarantee"
+            },
+            {
+              "document_id": "alpha-v1",
+              "section_id": "management_fee"
+            }
+          ]
+        }
+      },
+      "relation": "agreement"
+    },
+    {
+      "key": {
+        "fund_id": "alpha",
+        "share_class": "A",
+        "effective_date": "2026-01-01",
+        "field": "capital_guarantee"
+      },
+      "a": {
+        "presence": "present",
+        "assessment": {
+          "claim": {
+            "fund_id": "alpha",
+            "share_class": "A",
+            "effective_date": "2026-01-01",
+            "field": "capital_guarantee",
+            "answer_status": "stated",
+            "value": {
+              "label": "guaranteed"
+            },
+            "citations": [
+              {
+                "document_id": "alpha-v1",
+                "section_id": "capital_guarantee",
+                "quote": "Capital is not guaranteed. Investors may lose part or all of their investment."
+              }
+            ]
+          },
+          "normalized_value": {
+            "label": "guaranteed"
+          },
+          "citation_checks": [
+            {
+              "citation": {
+                "document_id": "alpha-v1",
+                "section_id": "capital_guarantee",
+                "quote": "Capital is not guaranteed. Investors may lose part or all of their investment."
+              },
+              "status": "located",
+              "reason_code": "EXACT_MATCH",
+              "spans": [
+                {
+                  "start": 248,
+                  "end": 326
+                }
+              ]
+            }
+          ],
+          "evidence_status": "contradicted",
+          "reason_code": "NEGATION_CONFLICT",
+          "reason": "模型的本金保证结论与原文相反。",
+          "checked_sections": [
+            {
+              "document_id": "alpha-v1",
+              "section_id": "capital_guarantee"
+            },
+            {
+              "document_id": "alpha-v1",
+              "section_id": "management_fee"
+            }
+          ]
+        }
+      },
+      "b": {
+        "presence": "present",
+        "assessment": {
+          "claim": {
+            "fund_id": "alpha",
+            "share_class": "A",
+            "effective_date": "2026-01-01",
+            "field": "capital_guarantee",
+            "answer_status": "stated",
+            "value": {
+              "label": "guaranteed"
+            },
+            "citations": [
+              {
+                "document_id": "alpha-v1",
+                "section_id": "capital_guarantee",
+                "quote": "Capital is not guaranteed. Investors may lose part or all of their investment."
+              }
+            ]
+          },
+          "normalized_value": {
+            "label": "guaranteed"
+          },
+          "citation_checks": [
+            {
+              "citation": {
+                "document_id": "alpha-v1",
+                "section_id": "capital_guarantee",
+                "quote": "Capital is not guaranteed. Investors may lose part or all of their investment."
+              },
+              "status": "located",
+              "reason_code": "EXACT_MATCH",
+              "spans": [
+                {
+                  "start": 248,
+                  "end": 326
+                }
+              ]
+            }
+          ],
+          "evidence_status": "contradicted",
+          "reason_code": "NEGATION_CONFLICT",
+          "reason": "模型的本金保证结论与原文相反。",
+          "checked_sections": [
+            {
+              "document_id": "alpha-v1",
+              "section_id": "capital_guarantee"
+            },
+            {
+              "document_id": "alpha-v1",
+              "section_id": "management_fee"
+            }
+          ]
+        }
+      },
+      "relation": "agreement"
+    },
+    {
+      "key": {
+        "fund_id": "beta",
+        "share_class": "A",
+        "effective_date": "2026-01-01",
+        "field": "annual_management_fee"
+      },
+      "a": {
+        "presence": "present",
+        "assessment": {
+          "claim": {
+            "fund_id": "beta",
+            "share_class": "A",
+            "effective_date": "2026-01-01",
+            "field": "annual_management_fee",
+            "answer_status": "stated",
+            "value": {
+              "amount": "45",
+              "unit": "bps"
+            },
+            "citations": [
+              {
+                "document_id": "beta-v1",
+                "section_id": "management_fee",
+                "quote": "The annual management fee for Class A is 45 basis points."
+              }
+            ]
+          },
+          "normalized_value": {
+            "amount": "45",
+            "unit": "bps"
+          },
+          "citation_checks": [
+            {
+              "citation": {
+                "document_id": "beta-v1",
+                "section_id": "management_fee",
+                "quote": "The annual management fee for Class A is 45 basis points."
+              },
+              "status": "located",
+              "reason_code": "EXACT_MATCH",
+              "spans": [
+                {
+                  "start": 177,
+                  "end": 234
+                }
+              ]
+            }
+          ],
+          "evidence_status": "supported",
+          "reason_code": "VALUE_MATCH",
+          "reason": "原文支持该字段值。",
+          "checked_sections": [
+            {
+              "document_id": "beta-v1",
+              "section_id": "management_fee"
+            },
+            {
+              "document_id": "beta-v1",
+              "section_id": "risk"
+            }
+          ]
+        }
+      },
+      "b": {
+        "presence": "present",
+        "assessment": {
+          "claim": {
+            "fund_id": "beta",
+            "share_class": "A",
+            "effective_date": "2026-01-01",
+            "field": "annual_management_fee",
+            "answer_status": "stated",
+            "value": {
+              "amount": "45",
+              "unit": "bps"
+            },
+            "citations": [
+              {
+                "document_id": "beta-v1",
+                "section_id": "management_fee",
+                "quote": "The annual management fee for Class A is 45 basis points."
+              }
+            ]
+          },
+          "normalized_value": {
+            "amount": "45",
+            "unit": "bps"
+          },
+          "citation_checks": [
+            {
+              "citation": {
+                "document_id": "beta-v1",
+                "section_id": "management_fee",
+                "quote": "The annual management fee for Class A is 45 basis points."
+              },
+              "status": "located",
+              "reason_code": "EXACT_MATCH",
+              "spans": [
+                {
+                  "start": 177,
+                  "end": 234
+                }
+              ]
+            }
+          ],
+          "evidence_status": "supported",
+          "reason_code": "VALUE_MATCH",
+          "reason": "原文支持该字段值。",
+          "checked_sections": [
+            {
+              "document_id": "beta-v1",
+              "section_id": "management_fee"
+            },
+            {
+              "document_id": "beta-v1",
+              "section_id": "risk"
+            }
+          ]
+        }
+      },
+      "relation": "agreement"
+    },
+    {
+      "key": {
+        "fund_id": "beta",
+        "share_class": "A",
+        "effective_date": "2026-01-01",
+        "field": "capital_guarantee"
+      },
+      "a": {
+        "presence": "present",
+        "assessment": {
+          "claim": {
+            "fund_id": "beta",
+            "share_class": "A",
+            "effective_date": "2026-01-01",
+            "field": "capital_guarantee",
+            "answer_status": "not_stated",
+            "value": null,
+            "citations": []
+          },
+          "normalized_value": null,
+          "citation_checks": [],
+          "evidence_status": "supported",
+          "reason_code": "NOT_STATED_IN_SCOPE",
+          "reason": "检查范围内未找到声明。",
+          "checked_sections": [
+            {
+              "document_id": "beta-v1",
+              "section_id": "management_fee"
+            },
+            {
+              "document_id": "beta-v1",
+              "section_id": "risk"
+            }
+          ]
+        }
+      },
+      "b": {
+        "presence": "present",
+        "assessment": {
+          "claim": {
+            "fund_id": "beta",
+            "share_class": "A",
+            "effective_date": "2026-01-01",
+            "field": "capital_guarantee",
+            "answer_status": "not_stated",
+            "value": null,
+            "citations": []
+          },
+          "normalized_value": null,
+          "citation_checks": [],
+          "evidence_status": "supported",
+          "reason_code": "NOT_STATED_IN_SCOPE",
+          "reason": "检查范围内未找到声明。",
+          "checked_sections": [
+            {
+              "document_id": "beta-v1",
+              "section_id": "management_fee"
+            },
+            {
+              "document_id": "beta-v1",
+              "section_id": "risk"
+            }
+          ]
+        }
+      },
+      "relation": "both_unknown"
+    }
+  ],
+  "diagnostics": [],
+  "errors": [],
+  "duration_ms": 0,
+  "synthetic": true,
+  "decision_boundary": "research_only_never_auto_act"
+}
