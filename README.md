@@ -35,9 +35,9 @@ The application itself still does not auto-discover credentials or `.env` files.
 
 ## Five-minute video demo
 
-[![Watch the five-minute narrated demo](demo/video-poster.jpg)](https://github.com/whitesungun876/fund-facts-cross-check/raw/refs/heads/main/demo/fund-facts-demo.mp4)
+[![Watch the five-minute narrated demo](demo/video-poster.jpg)](https://whitesungun876.github.io/fund-facts-cross-check/)
 
-[Watch or download the MP4](https://github.com/whitesungun876/fund-facts-cross-check/raw/refs/heads/main/demo/fund-facts-demo.mp4) — 5:00, English synthetic narration and synchronized English captions.
+[Watch the video online](https://whitesungun876.github.io/fund-facts-cross-check/) — 5:00, English synthetic narration and synchronized English captions.
 
 The video visualizes the actual inputs and saved outputs of a real OpenRouter run, then shows a separately labeled injected failure and the mutation gates. Its animated panels are an explanatory replay of CLI results, not a screen recording or an implemented application UI. Both models passed all eight field checks in the successful run; earlier failed attempts are also discussed. The synthetic corpus and narrow verification limits remain explicit.
 
@@ -66,7 +66,7 @@ See [the generated adversarial report](demo/injected_report.md). It uses the rea
 | `evaluate.py` | Labeled regression evaluation, mutation gates and live evaluation |
 | `tests/test_core.py` | Unit tests plus mocked transport/pipeline/CLI behavior |
 
-The project has seven Python source files, including the unit suite, and no dependency on its surrounding workspace. Copy this directory to run it elsewhere.
+The project has seven Python source files, including the unit suite, plus one static HTML page for playing the demo video: eight code files in total. The Python application has no dependency on the player or surrounding workspace. Copy this directory to run it elsewhere.
 
 - [contract.md](contract.md) freezes interfaces, source grammar, status semantics and scope.
 - [agent.md](agent.md) contains development rules. It must be read explicitly by tools that only auto-discover `AGENTS.md`.

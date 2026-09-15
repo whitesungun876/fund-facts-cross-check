@@ -1,8 +1,8 @@
 # Five-minute video demo
 
-[![Play the narrated demo](video-poster.jpg)](https://github.com/whitesungun876/fund-facts-cross-check/raw/refs/heads/main/demo/fund-facts-demo.mp4)
+[![Play the narrated demo](video-poster.jpg)](https://whitesungun876.github.io/fund-facts-cross-check/)
 
-[**▶ Watch / download the video (MP4)**](https://github.com/whitesungun876/fund-facts-cross-check/raw/refs/heads/main/demo/fund-facts-demo.mp4)
+[**▶ Watch the video online**](https://whitesungun876.github.io/fund-facts-cross-check/)
 
 5:00 · 1280 × 720 · English synthetic narration · Synchronized English captions.
 

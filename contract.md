@@ -5,6 +5,7 @@ Frozen: 2026-09-15. This is the implementation contract; `schemas.py` is its mac
 ## 1. Delivery boundary
 
 - Standalone Python 3.12 project: five runtime modules, one eval entry point, one unit-test file (seven source files total).
+- Presentation-only addition: one static `index.html` serves the existing demo video on GitHub Pages. It adds no application endpoint or model calls; there are eight code files including this HTML page.
 - CLI and Python interfaces only. HTTP, Bearer authentication, web UI, PDF ingestion, arbitrary file/URL input, trading and cloud deployment are deferred. CLI authentication is the local OS user; live model credentials come only from the process environment.
 - Two synthetic, controlled English factsheets; two fields: `annual_management_fee`, `capital_guarantee`.
 - Two distinct configurable OpenRouter model IDs receive identical initial messages and JSON schema. No model voting, third-model judge, or automatic correction of factual mistakes.
